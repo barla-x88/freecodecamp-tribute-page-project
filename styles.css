@@ -1,0 +1,54 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ruluko', sans-serif;
+  background-color: #2f4858;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#img-div {
+  position: relative;
+}
+
+#image {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  filter: grayscale(80%);
+  z-index: -1;
+}
+
+.intro {
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 4.5vw;
+  line-height: 147.687%; /* 3.32294rem */
+  letter-spacing: 0.6rem;
+}
+
+#title + p {
+  font-size: 2.5vw;
+}
+
+.inline {
+  width: 50%;
+  overflow: hidden;
+}

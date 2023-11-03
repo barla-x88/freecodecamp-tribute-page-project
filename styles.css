@@ -6,6 +6,7 @@ html {
 body {
   font-family: 'Ruluko', sans-serif;
   background-color: #2f4858;
+  color: #fff;
 }
 
 *,
@@ -22,8 +23,9 @@ body {
 
 #image {
   width: 100%;
+  height: auto;
   aspect-ratio: 2 / 1;
-  filter: grayscale(80%);
+  filter: grayscale(20%);
   z-index: -1;
 }
 
@@ -51,4 +53,71 @@ body {
 .inline {
   width: 50%;
   overflow: hidden;
+}
+
+.responsive-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.quote-text {
+  font-family: 'Rubik', sans-serif;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 10px;
+}
+
+.introduction {
+  margin: 50px auto;
+  font-size: 0.8rem;
+}
+
+.introduction h2,
+.timeline h2 {
+  display: inline-block;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 22px;
+  padding: 18px 33px;
+  background-color: #a76f56;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+.timeline {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 700px) {
+  .responsive-content {
+    width: 70%;
+    margin: 70px auto;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .introduction {
+    margin: 90px auto;
+    font-size: 1rem;
+  }
+
+  .introduction h2,
+  .timeline h2 {
+    margin-bottom: 44px;
+  }
 }

@@ -81,7 +81,8 @@ body {
 }
 
 .introduction h2,
-.timeline h2 {
+.timeline h2,
+.contributions h2 {
   display: inline-block;
   text-align: center;
   margin-left: 50%;
@@ -99,6 +100,80 @@ body {
 
 .timeline {
   font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+.timeline-container {
+  font-size: inherit;
+  width: 310px;
+  margin: 0 auto;
+}
+
+.event-container {
+  padding: 20px;
+  width: 156px;
+  position: relative;
+  background-clip: content-box;
+  background-color: #7b6f51;
+  text-align: center;
+  color: #fff;
+  font-family: 'Ruluko', sans-serif;
+}
+
+.event-container span {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.right {
+  border-left: 2px solid #7b6f51;
+  margin-left: auto;
+}
+
+.left {
+  border-right: 2px solid #7b6f51;
+}
+
+.right::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6f6242;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #8f8585;
+  top: 50%;
+  left: -11.5px;
+  transform: translateY(-50%);
+}
+
+.left::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6f6242;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #8f8585;
+  top: 50%;
+  right: -11.5px;
+  transform: translateY(-50%);
+}
+
+.contributions {
+  background-color: #ffffff;
+  padding: 28px 0;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 400px) {
+  .timeline-container {
+    width: 400px;
+  }
+
+  .event-container {
+    width: 201px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -116,8 +191,26 @@ body {
     font-size: 1rem;
   }
 
+  .timeline {
+    margin-bottom: 90px;
+  }
+
   .introduction h2,
   .timeline h2 {
     margin-bottom: 44px;
+  }
+
+  .timeline-container {
+    width: 700px;
+    font-size: 1rem;
+  }
+
+  .event-container {
+    width: 351px;
+  }
+
+  .contributions {
+    padding: 56px 0;
+    font-size: 1rem;
   }
 }

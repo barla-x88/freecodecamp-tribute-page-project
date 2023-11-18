@@ -7,6 +7,7 @@ body {
   font-family: 'Ruluko', sans-serif;
   background-color: #2f4858;
   color: #fff;
+  overflow-x: hidden;
 }
 
 *,
@@ -100,7 +101,11 @@ img {
   text-transform: uppercase;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 22px;
-  padding: 18px 33px;
+
+  /* This was causing horizontal scrollbars */
+  /* padding: 1rem 2rem; */
+
+  padding: 1rem 1.8rem;
   background-color: #a76f56;
 }
 
